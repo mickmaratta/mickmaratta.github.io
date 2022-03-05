@@ -5,25 +5,7 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
 
-let mouse = {
-    x: undefined,
-    y: undefined
-};
-
-let maxRadius = 40;
-
-window.addEventListener('mousemove', function(event) {
-    mouse.x = event.x;
-    mouse.y = event.y;
-});
-
-window.addEventListener('resize', function(){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    init();
-});
- 
+//Circle Colors:
 let colorArray = [
     '#FF8C8A',
     '#FF7F11',
@@ -39,6 +21,7 @@ function Circle(x, y, dx, dy, radius, minRadius, color) {
     this.dy = dy;
     this.radius = radius;
     this.minRadius = radius;
+    //Adjust for number of circles
     this.color = colorArray[Math.floor(Math.random() * 5)];
 
     this.draw = function() {
