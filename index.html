@@ -1,7 +1,168 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Hello World</h1>
-        <p>Testing hosting with Github pages</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio website Mick Maratta">
+    <title>Mick Maratta</title>
+    <link rel="stylesheet" href="./resources/CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dabe919425.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/Media/Pictures/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/Media/Pictures/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/Media/Pictures/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<!-- NAVBAR -->
+    <span id="nav-line"></span>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <p>MM</p>
+        </div> 
+        <ul class="nav-links">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#abt-me">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+<!-- MAIN -->
+    <div class="main-container" id="main">
+        <h1>Hi,<br>I'm Mick,<br>
+            <span class="txt-type" data-wait="1500" data-words='["Web&nbsp;Developer", "Musician", "Creator", "Designer", "Cat&nbsp;Enthusiast" ]'></span>
+        </h1>
+        <div class="btn-main">
+            <h2><a href="#my-work">My Work  <i class="fa-solid fa-arrow-right-long"></i></a></h2>
+        </div>
+        <div class="scroll-down">
+            <p>Scroll Down</p>
+            <i class="fa-solid fa-angle-down fa-bounce"></i> 
+        </div>
+        
+    </div>
+
+<!-- MY WORK -->
+    <div class="my-work"  id="my-work">
+        <h2>My Work</h2>
+        <div class="card-container">
+            <!-- Project 1 -->
+            <div class="card">
+              <img src="./resources/Media/Pictures/casa-carlos.png" alt="Casa Carlos" style="width:100%">
+              <div class="container">
+                <h3><b>Casa Carlos</b></h3>
+                <p>A fictional cocktail bar website using HTML, CSS and JS.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+                <div class="mobile-link">
+                    <div class="btn">
+                        <a href="https://mickmaratta.github.io/casa-carlos/" target="_blank">View Live</a>
+                    </div>
+                    <div class="btn">
+                        <a href="https://github.com/mickmaratta/casa-carlos" target="_blank">View GitHub</a>
+                    </div>
+                </div>
+                <div class="img-overlay img-overlay--blur">
+                    <a class="btn" href="https://mickmaratta.github.io/casa-carlos/" target="_blank">VIEW LIVE PROJECT</a>
+                    <a class="btn" href="https://github.com/mickmaratta/casa-carlos" target="_blank">VIEW ON GITHUB</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="card">
+                <img src="./resources/Media/Pictures/sample-proj1.jpeg" alt="" style="width:100%">
+                <div class="container">
+                  <h3><b>Sample Project</b></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget.</p>
+                  <p><strong>Technologies:</strong></p>
+                  <div class="mobile-link">
+                    <div class="btn">
+                        <a href="">View Live</a>
+                    </div>
+                    <div class="btn">
+                        <a href="">View GitHub</a>
+                    </div>
+                  </div>
+                  <div class="img-overlay img-overlay--blur">
+                    <a class="btn" href="">VIEW LIVE PROJECT</a>
+                    <a class="btn" href="">VIEW ON GITHUB</a>
+                  </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="card">
+                <img src="./resources/Media/Pictures/sample-proj2.jpeg" alt="Casa Carlos" style="width:100%">
+                <div class="container">
+                  <h3><b>Sample Project</b></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget.</p>
+                  <p><strong>Technologies:</strong></p>
+                  <div class="mobile-link">
+                    <div class="btn">
+                        <a href="">View Live</a>
+                    </div>
+                    <div class="btn">
+                        <a href="">View GitHub</a>
+                    </div>
+                  </div>
+                  <div class="img-overlay img-overlay--blur">
+                    <a class="btn" href="">VIEW LIVE PROJECT</a>
+                    <a class="btn" href="">VIEW ON GITHUB</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ABOUT ME -->
+    <div id="abt-me">
+        <h2>About Me</h2>
+        <div class="abt-container">
+            <img src="resources/Media/Pictures/blank-img.png" alt="">
+            <p class="mobile-abt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed viverra felis, eu suscipit purus. Vivamus quis erat est. Praesent pretium, leo vel sollicitudin porttitor, arcu nunc molestie dolor, vitae ullamcorper augue elit et sem. Integer ac nibh magna. Praesent accumsan ante in magna tristique, id commodo ligula dictum.</p>
+            <p class="desktop-abt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed viverra felis, eu suscipit purus. Vivamus quis erat est. Praesent pretium, leo vel sollicitudin porttitor, arcu nunc molestie dolor, vitae ullamcorper augue elit et sem. Integer ac nibh magna. Praesent accumsan ante in magna tristique, id commodo ligula dictum. Praesent faucibus justo arcu, eu efficitur orci laoreet vel. Duis suscipit ante ipsum, vel varius ante ultrices sed. Donec sed mollis velit. Etiam rhoncus faucibus dolor in vestibulum. Mauris viverra varius elementum. Fusce in vulputate tortor, in facilisis turpis.<br><br>
+                Nulla eget nisl et arcu tempus ullamcorper quis quis orci. Morbi a turpis nunc. Donec posuere viverra justo sit amet malesuada. Suspendisse dictum porta tortor, a maximus ligula. In in neque nec sem pellentesque molestie. Curabitur hendrerit molestie arcu ut varius. Sed pulvinar leo dignissim lorem ultricies rutrum. Praesent quam ex, tempor at venenatis eget, sodales ac nulla. Quisque posuere leo nec mauris vulputate elementum. Aenean laoreet et dolor eget cursus. Curabitur varius metus finibus massa rutrum, nec consequat lectus tempor. Donec gravida maximus nisi id viverra. Cras ac elementum elit. Suspendisse potenti. Morbi condimentum quis tellus id sagittis.</p>
+        </div>
+    </div>
+<!-- CONTACT -->
+    <div id="contact">
+        <div class="con-container">
+            <h2>Contact</h2>
+            <p>Have an idea for a project? Let's work together!</p>
+            <div class="con-inner">
+                <div>
+                    <h3>Message Me</h3>
+                    <p>Email: mickmaratta@gmail.com</p>
+                    <p>Phone: xxx - xxx - xxxx</p>
+                </div>
+                <div>
+                    <h3>Socials</h3>
+                    <a href="">Facebook</a><br>
+                    <a href="">Instagram</a><br>
+                    <a href="">Twitter</a><br>
+                    <a href="">GitHub</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- FOOTER -->
+<footer>
+    <p class="copyright">&copy;Mick Maratta 2022</p>
+    <div class="social-media">
+      <a href=""><img src="resources/Media/Pictures/facebook-icon.png" alt=""></a>
+      <a href=""><img src="resources/Media/Pictures/instagram-icon.png" alt=""></a>
+      <a href=""><img src="resources/Media/Pictures/twitter-icon.png" alt=""></a>
+      <a href=""><img src="resources/Media/Pictures/github-icon.png" alt=""></a>
+    </div>
+  </footer>
+    <canvas class='background' id='bg-canvas'></canvas>
+    <script src="./resources/JS/sliding-animations.js"></script> 
+    <script src="./resources/JS/navbar.js"></script> 
+    <script src="./resources/JS/typewriter.js"></script> 
+    <script src="./resources/JS/particles-canvas.js"></script>   
+</body>
 </html>

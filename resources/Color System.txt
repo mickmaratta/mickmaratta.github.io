@@ -1,0 +1,49 @@
+COLOR SYSTEM
+Primary Color
+--pri-col-100: #333399;
+--pri-col-110: #3B3BB3;
+--pri-col-130: #4C4CE6;
+--pri-col-80: #222266;
+--pri-col-70: #19194D;
+
+Secondary Colors
+
+--sec-col1-100: #F28482;
+--sec-col1-110: #FF8C8A;
+--sec-col1-120: #D97775;
+--sec-col1-130: #A65B5A;
+--sec-col1-90: #804645;
+
+
+--sec-col2-100: #A9E5BB;
+--sec-col2-110: #BDFFD1;
+--sec-col2-85: #8EBF9C;
+--sec-col2-70: #71997D;
+--sec-col2-50: #4B6653;
+
+--sec-col3-100: #FF7F11;
+--sec-col3-90: #E67410;
+--sec-col3-80: #CC670E;
+--sec-col3-60: #994D0B;
+--sec-col3-50: #804009;
+
+Neutral Colors
+--neut-col1-100: #8EA8C3;
+--neut-col1-110: #A0BDDB;
+--neut-col1-120: #B3D3F5;
+--neut-col1-70: #566575;
+--neut-col1-50: #303942;
+
+--neut-col2-100: #EFFFFF;
+--neut-col2-95: #E4F2F2;
+--neut-col2-90: #D8E6E6;
+--neut-col2-20: #303333;
+--neut-col2-15: #242626;
+
+--off-white: #E8E8E8;
+
+Semantic Color
+--success-col:
+--warn-col:
+--err-col:
+--info-col:
