@@ -265,18 +265,20 @@ transform: rotate(45deg) translate(-5px,-6px);
 display: flex;
 flex-direction: column;
 justify-content: center;
-height: 100%;
+height: 100vh;
 padding: 0 3rem;
-text-align: left;
+text-align: center;
 height: 100vh;
 color: var(--pri-col-130);
 }
 
+.main-container h1 {
+    text-align: left;
+}
 .txt-type {
     color: var(--sec-col1-100);
 }
 
-.scroll-down {display: none;}
 
 /* Typewriter Cursor */ 
 .txt-type > .txt {
@@ -302,12 +304,29 @@ font-weight: 200;
 font-size: 3rem;
 }
 
+.scroll-down {
+    display: inline;
+    position: absolute;
+    top: 95vh;
+    font-size: 1.4rem;
+    color: var(--sec-col1-100);
+    transition: 1s;
+    opacity: 1;
+    align-self: center;
+}
+
+.scroll-down p {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.scroll-down.hide {
+    opacity: 0;
+}
+
 @media screen and (min-width: 860px) {
     .main-container {
-        text-align: center;
         align-items: center;
-        justify-content: center;
-        height: 100vh;
     }
 
     .btn-main {
