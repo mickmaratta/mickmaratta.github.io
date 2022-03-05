@@ -65,7 +65,7 @@ text-align: center;
 
 .background {
 position: absolute; 
-display: block;     
+display: none;     
 top: 0; 
 left: 0;
 width: 100%;     
@@ -87,6 +87,10 @@ p {
 a {font-size: 1.6rem;}
 
 @media screen and (min-width: 860px) {
+    .background {
+        display: block;
+    };
+
     h1 {
         font-size: 6rem;
     }
