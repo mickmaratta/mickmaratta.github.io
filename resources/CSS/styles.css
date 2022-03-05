@@ -275,6 +275,7 @@ color: var(--pri-col-130);
 .main-container h1 {
     text-align: left;
 }
+
 .txt-type {
     color: var(--sec-col1-100);
 }
@@ -327,6 +328,10 @@ font-size: 3rem;
 @media screen and (min-width: 860px) {
     .main-container {
         align-items: center;
+    }
+
+    .main-container h1 {
+        text-align: center;
     }
 
     .btn-main {
