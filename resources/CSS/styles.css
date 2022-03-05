@@ -494,10 +494,11 @@ margin: 0.5rem 0.5rem;
     width: 25vh;
     border-radius: 50%;
     float: left;
+    margin: 2rem;
 }
 
 .abt-container p {
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 .desktop-abt {display: none;}
 
@@ -511,7 +512,6 @@ margin: 0.5rem 0.5rem;
     .abt-container img {
         height: 40vh;
         width: 40vh;
-        margin: 1rem 3rem;
     }
 }
 
