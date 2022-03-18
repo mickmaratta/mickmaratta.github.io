@@ -385,7 +385,7 @@ transition: 0.65s ease-out;
 width:fit-content;
 height: 50%;
 border-radius: 5px 5px 0 0;
-object-fit: cover;
+object-fit: fill;
 }
 
 .card.show {
