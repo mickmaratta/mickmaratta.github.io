@@ -140,12 +140,6 @@ letter-spacing: 0.4rem;
     z-index: 100;
 }
 
-.logo:hover {
-transform: rotate(1080deg);
-transition: 1.5s ease-in-out;
-cursor: default;
-}
-
 .nav-links {
 position: absolute;
 background-color: var(--off-white);
@@ -335,6 +329,11 @@ font-size: 3rem;
 
     .btn-main {
         width: 30%;
+        transition: 0.3s ease-out;
+    }
+
+    .btn-main i {
+        transition: 0.3s ease-in-out;
     }
 
     .btn-main:hover i {
