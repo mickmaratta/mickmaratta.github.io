@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    html {font-size: 62.5%; }
+    
+    :root {
+    font-family: 'Amatic SC', sans-serif;
+    
+    --primary-color-h: 169;
+    --primary-color-s: 52%;
+    --primary-color-l: 20%;
+    /*
+    137, 28%, 30%
+    */
+    --secondary-color-h: 257;
+    --secondary-color-s: 100%;
+    --secondary-color-l: 19%;
+    
+    --tertiary-color-h: 1;
+    --tertiary-color-s: 81%;
+    --tertiary-color-l: 73%;
+    
+    --primary-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
+    --primary-color-10: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 5%));
+    --primary-color-20: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 10%));
+    --primary-color-30: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 15%));
+    --primary-color-40: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 20%));
+    --primary-color-50: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 25%));
+    --primary-color-60: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 30%));
+    --primary-color-70: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 35%));
+    --primary-color-80: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 40%));
+    
+    --secondary-color: hsl(var(--secondary-color-h), var(--secondary-color-s), var(--secondary-color-l));
+    --secondary-color-10: hsl(var(--secondary-color-h), var(--secondary-color-s), calc(var(--secondary-color-l) + 5%));
+    --secondary-color-20: hsl(var(--secondary-color-h), var(--secondary-color-s), calc(var(--secondary-color-l) + 10%));
+    --secondary-color-30: hsl(var(--secondary-color-h), var(--secondary-color-s), calc(var(--secondary-color-l) + 15%));
+    --secondary-color-40: hsl(var(--secondary-color-h), var(--secondary-color-s), calc(var(--secondary-color-l) + 20%));
+    --secondary-color-50: hsl(var(--secondary-color-h), var(--secondary-color-s), calc(var(--secondary-color-l) + 25%));
+    --secondary-color-60: hsl(var(--secondary-color-h), var(--secondary-color-s), calc(var(--secondary-color-l) + 30%));
+    --secondary-color-70: hsl(var(--secondary-color-h), var(--secondary-color-s), calc(var(--secondary-color-l) + 35%));
+    --secondary-color-80: hsl(var(--secondary-color-h), var(--secondary-color-s), calc(var(--secondary-color-l) + 40%));
+    
+    --tertiary-color: hsl(var(--tertiary-color-h), var(--tertiary-color-s), var(--tertiary-color-l));
+    --tertiary-color-10: hsl(var(--tertiary-color-h), var(--tertiary-color-s), calc(var(--tertiary-color-l) - 5%));
+    --tertiary-color-20: hsl(var(--tertiary-color-h), var(--tertiary-color-s), calc(var(--tertiary-color-l) - 10%));
+    --tertiary-color-30: hsl(var(--tertiary-color-h), var(--tertiary-color-s), calc(var(--tertiary-color-l) - 15%));
+    --tertiary-color-40: hsl(var(--tertiary-color-h), var(--tertiary-color-s), calc(var(--tertiary-color-l) - 20%));
+    --tertiary-color-50: hsl(var(--tertiary-color-h), var(--tertiary-color-s), calc(var(--tertiary-color-l) - 25%));
+    --tertiary-color-60: hsl(var(--tertiary-color-h), var(--tertiary-color-s), calc(var(--tertiary-color-l) - 30%));
+    --tertiary-color-70: hsl(var(--tertiary-color-h), var(--tertiary-color-s), calc(var(--tertiary-color-l) - 35%));
+    --tertiary-color-80: hsl(var(--tertiary-color-h), var(--tertiary-color-s), calc(var(--tertiary-color-l) - 40%));
+    
+    /* NEUTRAL COLORS */
+    --neut-color-h: 0;
+    --neut-color-s: 0%;
+    --neut-color-l: 0%;
+    
+    --neut-color: hsl(var(--neut-color-h), var(--neut-color-s), var(--neut-color-l));
+    --neut-color-10: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 5%));
+    --neut-color-20: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 10%));
+    --neut-color-30: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 15%));
+    --neut-color-40: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 20%));
+    --neut-color-50: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 25%));
+    --neut-color-60: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 30%));
+    --neut-color-70: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 35%));
+    --neut-color-80: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 40%));
+    --neut-color-90: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 45%));
+    --neut-color-100: hsl(var(--neut-color-h), var(--neut-color-s), calc(var(--neut-color-l) + 50%));
+    
+    --off-white: #FAFAFA;
+    }
+    
+    body {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--neut-color-60);
+    color: var(--off-white);
+    text-align: center;
+    cursor: default;
+    justify-content: center;
+    }
+    
+    .background {
+    position: absolute; 
+    display: none;     
+    top: 0; 
+    left: 0;
+    width: 100%;     
+    z-index: -99;
+    }
+    
+    /*GLOBAL FONT STYLES */
+    h1 {font-size: 5.5rem;}
+    
+    h2 {font-size: 5rem;}
+    
+    h3 {font-size: 1.9rem;}
+    
+    p {
+        font-size: 1.6rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    a {font-size: 1.6rem;}
+    
+    @media screen and (min-width: 860px) {
+        .background {
+            display: block;
+        };
+    
+        h1 {
+            font-size: 6rem;
+        }
+    
+        h2 {
+            font-size: 6rem;
+            letter-spacing: 0.3rem;
+            font-weight: 300;
+        }
+    
+        h3 {
+            font-size: 3rem;
+            font-weight: 100;
+            letter-spacing: 0.3rem;
+        }
+    
+        p {font-size: 1.9rem;}
+        a {font-size: 1.9rem;}
+    }
+
+/* THANKS */
+.thanks {
+    width: 90%;
+    color: var(--off-white);
+    background-color: var(--neut-color-100);
+    margin: 0 auto 9vh;
+    padding: 3rem;
+    border-radius: 10px;
+    line-height: 1.5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);   
+}
+
+.thanks p {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.thanks button {
+    width: 50%;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 3px 6px var(--neut-color-30);
+}
+
+.thanks a {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+.thanks-h1 {
+    margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 860px) {
+    .thanks {
+        width: 60%;
+    }
+}

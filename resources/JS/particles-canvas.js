@@ -6,12 +6,13 @@ canvas.height = window.innerHeight;
 var c = canvas.getContext('2d');
 
 //Circle Colors:
+let opacity = 0.25
 let colorArray = [
-    '#FF8C8A',
-    '#FF7F11',
-    '#BDFFD1',
-    '#FF54BE',
-    '#8EBF9C',
+    `hsla(135, 28%, 30%, ${opacity})`,
+    `hsla(81, 28%, 37%, ${opacity})`,
+    `hsla(196, 26%, 25%, ${opacity})`,
+    `hsla(197, 71%, 24%, ${opacity})`,
+    `hsla(81, 75%, 35%, ${opacity})`,
  ]
 
 function Circle(x, y, dx, dy, radius, minRadius, color) {
@@ -21,8 +22,8 @@ function Circle(x, y, dx, dy, radius, minRadius, color) {
     this.dy = dy;
     this.radius = radius;
     this.minRadius = radius;
-    //Adjust for number of circles
-    this.color = colorArray[Math.floor(Math.random() * 5)];
+    
+    this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
 
     this.draw = function() {
         c.beginPath();
@@ -49,14 +50,18 @@ function Circle(x, y, dx, dy, radius, minRadius, color) {
 let circleArray = [];
 function init() {
     circleArray = [];
-    for (let i=0; i<30; i++) {
+    let numOfCircles = 15;
+    let circleSize = 70;
+    let circleSpeed = 0.3;
+
+    for (let i=0; i<numOfCircles; i++) {
         //Circle size
-        let radius = Math.floor(Math.random() * 3 + 1.6);
+        let radius = Math.floor(Math.random() * circleSize + 1.6);
         let x = Math.random() * (innerWidth - radius * 2) + radius;
         let y = Math.random() * (innerHeight - radius * 2) + radius;
         //Control speed
-        let dx = (Math.random() - 0.5) * 0.5;
-        let dy = (Math.random() - 0.5) * 0.5;
+        let dx = (Math.random() - 0.5) * circleSpeed;
+        let dy = (Math.random() - 0.5) * circleSpeed;
         circleArray.push(new Circle(x, y , dx, dy, radius));
     };
 };

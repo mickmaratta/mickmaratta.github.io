@@ -19,6 +19,17 @@ const navSlide = () => {
       //Burger Animation
       burger.classList.toggle('toggle');
     });
+
+    //Toggle Nav on Link click
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('nav-active');
+        burger.classList.remove('toggle');
+        navLinks.forEach((linkAni) => {
+          linkAni.style.animation = '';
+        })
+      })
+    })
   }
 
   navSlide();
